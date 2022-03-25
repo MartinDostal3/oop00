@@ -20,7 +20,8 @@ namespace oop00
         private void button1_Click(object sender, EventArgs e)
         {
             //Student std = new Student();
-            Student std = new Student("Lakatoš"); 
+            Student std = new Student("Lakatoš");
+            
 
             std.OznamkujCJL(3);
             std.OznamkujMAT(2);
@@ -39,6 +40,21 @@ namespace oop00
             }
             
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Student std2 = new Student("Armando", 1 , 3 , 2);
+            double p = std2.Prumer();
+            if (p != -1)
+            {
+                MessageBox.Show(std2.GetJmeno() + " má průměr známek: " + p);
+            }
+            else
+            {
+                MessageBox.Show(std2.GetJmeno() + " neni klasifikován");
+            }
 
         }
     }

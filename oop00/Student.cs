@@ -23,6 +23,13 @@ namespace oop00
            this.jmeno = jmeno;
            
         }
+        public Student(string jmeno, int znamkaCJL, int znamkaMAT, int znamkaPRG)
+        {
+            this.jmeno = jmeno;
+            this.znamkaCJL = znamkaCJL;
+            this.znamkaMAT = znamkaMAT;
+            this.znamkaPRG = znamkaPRG;
+        }
         public string GetJmeno()
         {
             return jmeno;
