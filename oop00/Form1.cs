@@ -25,7 +25,7 @@ namespace oop00
 
             std.OznamkujCJL(3);
             std.OznamkujMAT(2);
-            std.OznamkujMAT(1);
+            std.OznamkujPRG(1);
            
             
 
@@ -45,7 +45,7 @@ namespace oop00
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Student std2 = new Student("Armando", 1 , 3 , 2);
+            Student std2 = new Student("Armando", 1, 3, 1);
             double p = std2.Prumer();
             if (p != -1)
             {
@@ -55,6 +55,18 @@ namespace oop00
             {
                 MessageBox.Show(std2.GetJmeno() + " neni klasifikován");
             }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Student std3 = new Student("Ferrari", 1, 1, 2, "Tomáše Bati 1088");
+            MessageBox.Show(std3.GetJmeno() + " bydlí v " + std3.GetBydliste());
+            std3.SetBydliste("Pičín");
+            MessageBox.Show(std3.GetJmeno() + " se přestěhoval do " + std3.GetBydliste());
+
+            Student std4 = new Student("Gopál", "Kozodírky");
+            MessageBox.Show(std4.GetJmeno() + " bydlí v " + std4.GetBydliste());
 
         }
     }

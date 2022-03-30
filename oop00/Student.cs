@@ -13,6 +13,7 @@ namespace oop00
         private int znamkaCJL;
         private int znamkaMAT;
         private int znamkaPRG;
+        private string bydliste;
 
         //public Student()
         //{
@@ -20,8 +21,13 @@ namespace oop00
         //}
         public Student(string jmeno)
         {
-           this.jmeno = jmeno;
-           
+            this.jmeno = jmeno;
+
+        }
+        public Student(string jmeno, string bydliste)
+        {
+            this.jmeno = jmeno;
+            this.bydliste = bydliste;
         }
         public Student(string jmeno, int znamkaCJL, int znamkaMAT, int znamkaPRG)
         {
@@ -30,9 +36,27 @@ namespace oop00
             this.znamkaMAT = znamkaMAT;
             this.znamkaPRG = znamkaPRG;
         }
+        public Student(string jmeno, int znamkaCJL, int znamkaMAT, int znamkaPRG, string bydliste)
+        {
+            this.jmeno = jmeno;
+            this.znamkaCJL = znamkaCJL;
+            this.znamkaMAT = znamkaMAT;
+            this.znamkaPRG = znamkaPRG;
+            this.bydliste = bydliste;
+        }
         public string GetJmeno()
         {
             return jmeno;
+        }
+
+        public string GetBydliste()
+        {
+            return bydliste;
+        }
+        public void SetBydliste(string bydliste)
+        {
+            this.bydliste = bydliste;
+            return;
         }
         
         public void OznamkujCJL(int znamka)
