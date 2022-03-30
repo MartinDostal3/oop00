@@ -60,14 +60,22 @@ namespace oop00
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Student std3 = new Student("Ferrari", 1, 1, 2, "Tomáše Bati 1088");
-            MessageBox.Show(std3.GetJmeno() + " bydlí v " + std3.GetBydliste());
-            std3.SetBydliste("Pičín");
-            MessageBox.Show(std3.GetJmeno() + " se přestěhoval do " + std3.GetBydliste());
+            Student std1 = new Student("Ferrari", 1, 1, 2, "Tomáše Bati 1088");
+            MessageBox.Show(std1.GetJmeno() + " bydlí v " + std1.GetBydliste());
+            std1.SetBydliste("Pičín");
+            MessageBox.Show(std1.GetJmeno() + " se přestěhoval do " + std1.GetBydliste());
 
-            Student std4 = new Student("Gopál", "Kozodírky");
-            MessageBox.Show(std4.GetJmeno() + " bydlí v " + std4.GetBydliste());
+            Student std2 = new Student("Gopál", "Kozodírky");
+            MessageBox.Show(std2.GetJmeno() + " bydlí v " + std2.GetBydliste());
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Student std1 = new Student("Mrdáč", 1, 1, 1, "Stařeč");
+
+            MessageBox.Show(std1.ToString());
+            MessageBox.Show(textBox1.ToString());
         }
     }
 }
