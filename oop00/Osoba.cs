@@ -10,6 +10,8 @@ namespace oop00
     {
         private string jmeno;
         private string prijmeni;
+        private int vyska;
+        private double vaha;
 
         public Osoba(string jmeno)
         {
@@ -20,7 +22,14 @@ namespace oop00
             this.jmeno = jmeno;
             this.prijmeni = prijmeni;
         }
+        public Osoba(string jmeno, string prijmeni, int vyska, double vaha)
+        {
+            this.jmeno = jmeno;
+            this.prijmeni = prijmeni;
+            this.vyska = vyska;
+            this.vaha = vaha;
 
+        }
 
         public string GetJmeno()
         {
