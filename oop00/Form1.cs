@@ -72,10 +72,10 @@ namespace oop00
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Student std1 = new Student("Mrdáč", 1, 1, 1, "Stařeč");
+            Student std1 = new Student("hráč roku", 1, 1, 1, "Stařeč");
 
             MessageBox.Show(std1.ToString());
-            MessageBox.Show(textBox1.ToString());
+            
         }
     }
 }

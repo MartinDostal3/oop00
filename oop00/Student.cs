@@ -94,7 +94,8 @@ namespace oop00
         }
         public override string ToString()
         {
-            string s = "\njmeno: " + jmeno 
+            string s = 
+                "\njmeno: " + jmeno 
                 +"\nZnamka z CJL: " + znamkaCJL 
                 + "\nZnamka z MAT: " + znamkaMAT 
                 + "\nZnamka z PRG: " + znamkaPRG
