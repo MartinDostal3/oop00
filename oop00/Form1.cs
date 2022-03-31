@@ -90,5 +90,11 @@ namespace oop00
             MessageBox.Show(osoba2.CeleJmenoVelkymi());
             MessageBox.Show(osoba2.ToString());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Osoba osoba3 = new Osoba("Martin", "Dostál", 173, 76);
+            MessageBox.Show(osoba3.ToString());
+        }
     }
 }
