@@ -78,7 +78,9 @@ namespace oop00
         {
             string s = "\nJmeno: " + jmeno
                + "\nPrijmeni: " + prijmeni
-               + "\nCele jmeno velkymi: " + CeleJmenoVelkymi();
+               + "\nCele jmeno velkymi: " + CeleJmenoVelkymi()
+               +"\nVyska: " + vyska + " cm"
+               +"\nVaha: " + vaha +" kg";
 
 
             return base.ToString() + s;
