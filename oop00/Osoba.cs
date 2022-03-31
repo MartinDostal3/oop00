@@ -60,7 +60,10 @@ namespace oop00
         }
         public void SetVyska(int vyska)
         {
-            this.vyska = vyska;
+            if (vyska > 15 && vaha < 250)
+            {
+                this.vyska = vyska;
+            }
             return;
         }
 
@@ -70,8 +73,18 @@ namespace oop00
         }
         public void SetVaha(double vaha)
         {
-            this.vaha = vaha;
+            if(vaha > 1 && vaha < 350)
+            {
+                this.vaha = vaha;
+            }
+            
             return;
+        }
+        public double BMI(double vaha, int vyska)
+        {
+            
+
+            return vaha / Math.Pow((vyska/100), 2);
         }
 
         public override string ToString()
@@ -80,7 +93,8 @@ namespace oop00
                + "\nPrijmeni: " + prijmeni
                + "\nCele jmeno velkymi: " + CeleJmenoVelkymi()
                +"\nVyska: " + vyska + " cm"
-               +"\nVaha: " + vaha +" kg";
+               +"\nVaha: " + vaha +" kg"
+               +"\nBMI: " + BMI(vaha, vyska);
 
 
             return base.ToString() + s;

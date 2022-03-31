@@ -95,6 +95,10 @@ namespace oop00
         {
             Osoba osoba3 = new Osoba("Martin", "Dostál", 173, 76);
             MessageBox.Show(osoba3.ToString());
+
+            osoba3.SetVyska(173);
+            osoba3.SetVaha(75);
+            MessageBox.Show(osoba3.ToString());
         }
     }
 }
