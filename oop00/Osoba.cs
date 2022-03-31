@@ -54,6 +54,25 @@ namespace oop00
 
             return s;
         }
+        public int GetVyska()
+        {
+            return vyska;
+        }
+        public void SetVyska(int vyska)
+        {
+            this.vyska = vyska;
+            return;
+        }
+
+        public double GetVaha()
+        {
+            return vaha;
+        }
+        public void SetVaha(double vaha)
+        {
+            this.vaha = vaha;
+            return;
+        }
 
         public override string ToString()
         {
