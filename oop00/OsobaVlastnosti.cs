@@ -20,21 +20,22 @@ namespace oop00
         //        jmeno = value;
         //    }
         //}
-        public string Jmeno { get; private set; }
+        public string Jmeno { get;  } //{get; private set;}
 
-        private string prijmeni;
-        public string Prijmeni
-        {
-            get
-            {
-                return prijmeni;
-            }
-            set
-            {
-                prijmeni = value;
-            }
-            
-        }
+        //private string prijmeni;
+        //public string Prijmeni
+        //{
+        //    get
+        //    {
+        //        return prijmeni;
+        //    }
+        //    set
+        //    {
+        //        prijmeni = value;
+        //    }
+
+        //}
+        public string Prijmeni { get; set}
         private int vyska;
         public int Vyska
         {
