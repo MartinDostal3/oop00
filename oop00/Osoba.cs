@@ -60,7 +60,7 @@ namespace oop00
         }
         public void SetVyska(int vyska)
         {
-            if (vyska > 15 && vaha < 250)
+            if (vyska > 15 && vyska < 250)
             {
                 this.vyska = vyska;
             }

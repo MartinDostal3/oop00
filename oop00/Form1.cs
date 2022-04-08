@@ -100,5 +100,24 @@ namespace oop00
             osoba3.SetVaha(75);
             MessageBox.Show(osoba3.ToString());
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OsobaVlastnosti o1 = new OsobaVlastnosti("Franta");
+            MessageBox.Show(o1.ToString());
+            MessageBox.Show(o1.Jmeno);
+            o1.Prijmeni = "Kohout";
+            MessageBox.Show(o1.ToString());
+
+            OsobaVlastnosti o2 = new OsobaVlastnosti("Análka", "Jebavá", 450, 1000);
+            MessageBox.Show(o2.ToString());
+            o2.Vyska = 165;
+            o2.Vaha = 900;
+            MessageBox.Show(o2.ToString());
+            o2.Vaha = 65;
+            MessageBox.Show(o2.ToString());
+
+
+        }
     }
 }
