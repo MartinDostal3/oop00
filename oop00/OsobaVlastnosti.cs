@@ -35,7 +35,7 @@ namespace oop00
         //    }
 
         //}
-        public string Prijmeni { get; set}
+        public string Prijmeni { get; set; }
         private int vyska;
         public int Vyska
         {
